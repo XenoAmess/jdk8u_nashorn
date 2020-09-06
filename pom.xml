@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xenoamess</groupId>
     <artifactId>nashorn</artifactId>
-    <version>jdk8u265-b01-x1</version>
+    <version>jdk8u265-b01-x2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>A maven release for nashorn. Changed nothing, just put it to maven. The jar comes from AdoptOpenJDK.</description>
+    <description>A maven release for nashorn. Changed nothing, just put it to maven.</description>
     <url>https://github.com/xenoamess/jdk8u_nashorn</url>
     <licenses>
         <license>
@@ -134,6 +134,8 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven-javadoc-plugin.version}</version>
                 <configuration>
+                    <failOnError>false</failOnError>
+                    <failOnWarnings>false</failOnWarnings>
                     <locale>en</locale>
                     <show>private</show>
                     <reportOutputDirectory>../javadocs</reportOutputDirectory>
@@ -251,6 +253,12 @@
                     <fork>true</fork>
                     <compilerVersion>${java.version}</compilerVersion>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>default-compile</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
