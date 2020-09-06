@@ -1,3 +1,29 @@
+- What is this repo?
+
+I managed to push nashorn to maven central...
+Of course please use it following GPL2-WITH-CLASSPATH-EXCEPTION,
+just like when you use other jdk lib.
+
+maven:
+
+```
+<dependency>
+  <groupId>com.xenoamess</groupId>
+  <artifactId>nashorn</artifactId>
+  <version>jdk8u265-b01</version>
+</dependency>
+```
+
+gradle:
+
+```
+implementation 'com.xenoamess:nashorn:jdk8u265-b01'
+```
+
+----------
+----------
+----------
+
 - What is Nashorn?
 
 Nashorn is a runtime environment for programs written in ECMAScript 5.1
