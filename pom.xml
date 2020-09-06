@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xenoamess</groupId>
     <artifactId>nashorn</artifactId>
-    <version>jdk8u265-b01-x2</version>
+    <version>jdk8u265-b01-x3</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>A maven release for nashorn. Changed nothing, just put it to maven.</description>
@@ -229,6 +229,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <forceCreation>true</forceCreation>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
