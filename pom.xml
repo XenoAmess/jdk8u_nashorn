@@ -8,8 +8,8 @@
     <version>jdk8u265-b01-x1</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>A maven release of nashorn. Changed nothing, just put it to maven.</description>
-    <url>https://github.com/cyanpotion/x8l</url>
+    <description>A maven release for nashorn. Changed nothing, just put it to maven. The jar comes from AdoptOpenJDK.</description>
+    <url>https://github.com/xenoamess/jdk8u_nashorn</url>
     <licenses>
         <license>
             <name>GPL2-WITH-CLASSPATH-EXCEPTION</name>
